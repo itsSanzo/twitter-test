@@ -73,3 +73,30 @@ header {
   font-size: 13px;
   line-height: 22px;
 }
+
+#copyrights {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8899A6;
+  line-height: 18px;
+}
+
+#copyrights a {
+  color: #8899A6;
+}
+
+#copyrights:hover a {
+  color: #66757F;
+}
+
+#copyrights ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#copyrights li {
+  margin: 0px;
+  padding: 0px 3px;
+  display: inline;
+  list-style: none;
+}
