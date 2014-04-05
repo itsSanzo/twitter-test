@@ -1,6 +1,11 @@
 body {
   margin: 0px;
   background: #49C4FF;
+  font-family: "Helvetica Neue";
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -38,9 +43,33 @@ header {
 }
 
 #profile, #who-to-follow, #trends, #copyrights {
-  width: 270px;
+  width: 260px;
   margin: 0px 0px 10px 0px;
-  padding: 10px;
+  padding: 15px;
   background: #ffffff;
   border-radius: 5px;
+}
+
+.sidebar-title {
+  color: #66757F;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.changes {
+  font-size: 12px;
+}
+
+#sidebar a {
+  color: #FF645F;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+#trends {
+  font-size: 13px;
+  line-height: 22px;
 }
