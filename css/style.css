@@ -48,6 +48,8 @@ header {
   padding: 15px;
   background: #ffffff;
   border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .sidebar-title {
@@ -70,7 +72,6 @@ header {
 }
 
 #trends {
-  font-size: 13px;
   line-height: 22px;
 }
 
@@ -99,4 +100,50 @@ header {
   padding: 0px 3px;
   display: inline;
   list-style: none;
+}
+
+.suggestion {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.suggestion-pic {
+  float: left;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.suggestion-pic img {
+  border-radius: 5px;
+}
+
+.suggestion-info {
+  float: right;
+  width: 195px;
+  color: #8899A6;
+}
+
+.suggestion-info b {
+  color: #292F33;
+}
+
+.suggestion-close {
+  color: #E1E8ED;
+  font-size: 15px;
+}
+
+
+
+.follow-button {
+  width: 80px;
+  margin: 3px 0px 0px 0px;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #E1E8ED;
+  background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
+  background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
+  background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
+  background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #F2F5F7 100%);
 }
