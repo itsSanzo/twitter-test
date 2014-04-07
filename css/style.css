@@ -12,7 +12,7 @@ purple: #563444;
 
 
 body {
-  background: #292F33;
+  background: #292F33 url(../images/bg.png);
   margin: 0px;
   padding: 0px;
   font-family: "Helvetica Neue", sans-serif;
@@ -151,20 +151,51 @@ header li {
 #profile-info {
   height: 145px;
   border-radius: 6px 6px 0px 0px;
-  background: url(../images/profile_bg.png);
+  background: url('../images/profile_bg.png');
   text-align: center;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #1e1e1d;
 }
 
+#profile-wrap {
+  z-index: 50;
+  position: absolute;
+  top: 55px;
+  text-align: center;
+  width: 290px;
+}
+
+#profile-info-gradient {
+  height: 120px;
+  position: relative;
+  top: 25px;
+  z-index: 10;
+  border-radius: 5px 5px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.5)));
+}
+
+#profile-info:hover {
+  cursor: pointer;
+}
+
+#profile-info a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 #profile-pic {
   padding-top: 17px;
+  position: relative;
 }
 
 #profile-name {
   margin: 4px 0px 3px 0px;
   font-size: 22px;
   font-weight: 600;
+}
+
+#profile-name a:hover{
+  text-decoration: underline;
 }
 
 #profile-username {
@@ -373,9 +404,9 @@ td {
 #tweetfeed-new {
   background: #EEEEEE;
   text-align: center;
-  padding: 14px 0px;
+  padding: 12px 0px;
   font-size: 13px;
-  border-top: 1px solid #E1E8ED;
+  border-top: 1px solid #CCD6DD;
 }
 
 #tweetfeed-new:hover {
@@ -391,6 +422,7 @@ td {
 .tweetfeed-tweet {
   padding: 13px;
   display: flex;
+  border-top: 1px solid #CCD6DD;
 }
 
 .tweetfeed-tweet-pic {
@@ -408,7 +440,40 @@ td {
   float: left;
   width: 505px;
   font-size: 14px;
+  line-height: 18px;
 }
+
+.tweetfeed-tweet-info a {
+  color: #55ACEE;
+  text-decoration: none;
+}
+
+.tweetfeed-tweet-info a:hover {
+  text-decoration: underline;
+}
+
+a.tweetfeed-name {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.tweetfeed-name:hover {
+  color: #55ACEE;
+  text-decoration: underline;
+}
+
+a.tweetfeed-username, a.tweetfeed-time {
+  color: #66757F;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a.tweetfeed-time:hover {
+  color: #55ACEE;
+  text-decoration: underline;
+}
+
 
 .tweetfeed-tweet-footer {
   clear: both;
@@ -424,15 +489,44 @@ td {
 
 .tweetfeed-tweet-footer li {
   display: inline;
-  padding: 0;
+  padding: 0px 0px 0px 13px;
   margin: 0;
+}
+
+.tweetfeed-tweet-footer li i {
+  padding-right: 5px;
+}
+
+.tweetfeed-tweet:hover .footer-expand a {
+  color: #55ACEE;
 }
 
 .footer-expand {
   float: left;
 }
 
+.footer-expand a {
+  color: #8899A6;
+  text-decoration: none;
+}
+
+.footer-expand a:hover {
+  text-decoration: underline;
+}
+
 .footer-menu {
   float: right;
 }
 
+.footer-menu a {
+  color: #E1E8ED;
+  text-decoration: none;
+}
+
+.tweetfeed-tweet:hover .footer-menu a {
+  color: #66757F;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
