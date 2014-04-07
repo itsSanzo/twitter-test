@@ -387,3 +387,52 @@ td {
   color: #55ACEE;
   text-decoration: none;
 }
+
+.tweetfeed-tweet {
+  padding: 13px;
+  display: flex;
+}
+
+.tweetfeed-tweet-pic {
+  float: left;
+  margin-right: 10px;
+}
+
+.tweetfeed-tweet-pic img {
+  width: 47px;
+  height: 47px;
+  border-radius: 5px;
+}
+
+.tweetfeed-tweet-info {
+  float: left;
+  width: 505px;
+  font-size: 14px;
+}
+
+.tweetfeed-tweet-footer {
+  clear: both;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.tweetfeed-tweet-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tweetfeed-tweet-footer li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-expand {
+  float: left;
+}
+
+.footer-menu {
+  float: right;
+}
+
