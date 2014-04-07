@@ -1,83 +1,206 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>I look like Twitter, right?</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link href="css/reser.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header>menu stuff</header>
+  <header>
+    <div id="menu">
+      <ul>
+        <li><a href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-bell fa-lg"></i> Notifications</a></li>
+        <li><a href="#"><i class="fa fa-tag fa-lg"></i> Discover</a></li>
+        <li><a href="#"><i class="fa fa-user fa-lg"></i> Me</a></li>
+      </ul>
+    </div>
+
+    <div id="logo">
+      <i class="fa fa-twitter fa-lg"></i>
+    </div>
+
+    <div id="search">
+
+      <ul>
+        <li><a href="#"><i class="fa fa-envelope fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-gear fa-lg"></i></a></li>
+        <li><a href="#"><i class="fa fa-pencil-square-o fa-lg"></i></a></li>
+      </ul>
+
+    </div>
+  </header>
+
   <div id="wrapper">
     <div id="sidebar">
       <div id="profile">
-      profile
+        <div id="profile-info">
+          <div id="profile-pic">
+            <img src="images/ex_itsmurasaki.png">
+          </div>
+
+          <div id="profile-name"> Nat </div>
+
+          <div id="profile-username">@itsmurasaki</div>
+        </div>
+
+        <div id="profile-stats">
+          <table class="stats">
+            <thead>
+              <tr>
+                <th>Tweets</th>
+                <th>Following</th>
+                <th>Followers</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>186</td>
+                <td>95</td>
+                <td>50</td>
+              </tr>
+            </tbody>  
+          </table>
+        </div>
+
+        <div id="profile-input">
+          <form id="new-tweet">
+            <input type="text" value="Compose new Tweet...">
+          </form>
+        </div>
       </div>
 
       <div id="who-to-follow">
-        <div class="sidebar-title">Who to follow <span class="changes">&middot; <a href="#">Refresh</a> &middot; <a href="#">View all</a></span></div>
+        <div class="sidebar-title">
+          Who to follow
+          <span class="sidebar-change">&middot; <a href="#">Refresh</a> &middot; <a href="#">View all</a></span>
+        </div>
 
-          <div class="suggestion">
-            <div class="suggestion-pic"><img src="images/ex_youtube.png" border="0"></div>
-            <div class="suggestion-info">
-            	<b>Youtube</b> @youtube
-            	<div class="follow-button">
-            	<b>Follow</b>
-            	</div>
+        <div class="user-suggestion">
+          <div class="user-suggestion-pic">
+            <img src="images/ex_youtube.png">
+          </div>
+
+          <div class="user-suggestion-info">
+            <span class="suggestion-name"><a href="#">Youtube</a></span> <a href="#">@youtube</a>
+
+            <div class="follow-button">
+              <a href="#"><i class="fa fa-user"></i> Follow</a>
             </div>
           </div>
 
-          <div id="suggestion">
-            <div class="suggestion-pic"><img src="images/ex_twilio.png" border="0"></div>
-            <div class="suggestion-info">
-            	<a href="#"><b>Twilio</b></a> <a href="#">@twilio</a>
-            	<div class="follow-button">
-            	<b>Follow</b>
-            	</div>
-            </div>
-            <div class="suggestion-close"><a href="#">x</a></div>
+          <div class="user-suggestion-close">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+
+        <div class="user-suggestion">
+          <div class="user-suggestion-pic">
+            <img src="images/ex_twilio.png">
           </div>
 
-        <a href="#">Connect other address books</a>
+          <div class="user-suggestion-info">
+            <span class="suggestion-name"><a href="#">Twilio</a></span> <a href="#">@twilio</a>
+
+            <div class="follow-button">
+              <a href="#"><i class="fa fa-user"></i> Follow</a>
+            </div>
+          </div>
+
+          <div class="user-suggestion-close">
+            <i class="fa fa-times"></i>
+          </div>
+        </div>
+      
+      <div id="connect"><a href="#">Connect other address books</a></div>
       </div>
 
-      <div id="trends">
-        <div class="sidebar-title">United Kingdom Trends <span class="changes">&middot; <a href="#">Change</a></span></div>
-          <a href="#">#thevoiceukFINAL</a><br />
-          <a href="#">Zak Efron</a><br />
-          <a href="#">Tropic Thunder</a><br />
-          <a href="#">#prizefighter</a><br />
-          <a href="#">Sundowns</a><br />
-          <a href="#">#SAFTAs2014</a><br />
-          <a href="#">#WhoIsAdamSaleh</a><br />
-          <a href="#">Diego Milito</a><br />
-          <a href="#">WHERE's SCOTT</a>
+      <div id="trending-topics">
+        <div class="sidebar-title">
+          United Kingdom Trends 
+          <span class="sidebar-change">&middot; <a href="#">Change</a></span>
+        </div>
+
+        <ul>
+          <li><a href="#">Liverpool</a></li>
+          <li><a href="#">#thegrey</a></li>
+          <li><a href="#">#F1Bahrain</a></li>
+          <li><a href="#">#goal7</a></li>
+          <li><a href="#">#SongForBieber</a></li>
+          <li><a href="#">Ladder 49</a></li>
+          <li><a href="#">Neil Adams</a></li>
+          <li><a href="#">#unpopularfandomopinion</a></li>
+          <li><a href="#">Hamilton and Rosberg</a></li>
+          <li><a href="#">John Hartson</a></li>
+        </ul>
       </div>
 
       <div id="copyrights">
-        
         <ul>
           <li>&copy; 2014 Twitter</li>
-          <li><a>About</a></li>
-          <li><a>Help</a></li>
-          <li><a>Terms</a></li>
-          <li><a>Privacy</a></li>
-          <li><a>Cookies</a></li>
-          <li><a>Ads info</a></li>
-          <li><a>Brand</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Status</a></li>
-          <li><a>Apps</a></li>
-          <li><a>Jobs</a></li>
-          <li><a>Advertise</a></li>
-          <li><a>Businesses</a></li>
-          <li><a>Media</a></li>
-          <li><a>Developers</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Ads info</a></li>
+          <li><a href="#">Brand</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Apps</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Businesses</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Developers</a></li>
         </ul>
       </div>
+
     </div>
+
     <div id="tweetfeed">
-    tweet
+      <div id="tweetfeed-title">Tweets</div>
+
+      <div id="tweetfeed-new">
+        <a href="#">5 new Tweets</a>
+      </div>
+
+      <div class="tweetfeed-tweet">
+        <div class="tweetfeed-tweet-pic">
+        </div>
+
+        <div class="tweetfeed-tweet-info">
+          <div class="tweetfeed-tweet-header">
+            <b>Sarah</b> @csarah_y &middot; 20m
+          </div>
+          Honestly, I could study coding for the rest of my life.
+
+          <div class="tweetfeed-tweet-footer">
+            <div class="footer-expand">
+              Expand
+            </div>
+
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#"><i class="fa fa-reply"></i> Reply</a></li>
+                <li><a href="#"><i class="fa fa-retweet"></i> Retweet</a></li>
+                <li><a href="#"><i class="fa fa-star"></i> Favorite</a></li>
+                <li><a href="#"><i class="fa fa-ellipsis-h"></i> More</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   </div>
 </body>
+
 </html>

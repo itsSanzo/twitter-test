@@ -1,138 +1,267 @@
-body {
-  margin: 0px;
-  background: #49C4FF;
-  font-family: "Helvetica Neue";
-}
+/* COLORS
+============
+blue:   #55ACEE;
+grey1:  #292F33;
+grey2:  #66757F;
+grey3:  #8899A6;
+grey4:  #CCD6DD;
+grey5:  #E1E8ED;
+white:  #F5F8FA;
+purple: #563444;
+*/
 
-a {
-  text-decoration: none;
+
+body {
+  background: #292F33;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 header {
-  width: 100%;
   height: 45px;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  z-index: 20;
-  position: fixed;
-  top: 0px;
-  right: 0px
+  margin: 0px;
+  padding: 0px;
+  background: #FFFFFF;
 }
 
-#wrapper {
-	width: 890px;
-  margin: 55px auto;
+header a {
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: inline;
+  margin: 0px;
   padding: 0px;
+}
+
+header li {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu {
+  float: left;
+  z-index: 10;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 15px;
+  font-size: 13px;
+  text-align: left;
+}
+
+#menu a {
+  color: #66757F;
+}
+
+#menu li {
+  padding: 11px 17px;
+}
+
+#menu li:hover a {
+  color: #55ACEE;
+}
+
+#menu li:hover {
+  border-bottom: 4px solid #55ACEE;
+}
+
+#logo {
+  float: left;
+  width: 100%;
+  z-index: 1;
+  color: #55ACEE;
+  position: relative;
+  top: 0px;
+  text-align: center;
+}
+
+#search {
+ float: right;
+ z-index: 10;
+ position: absolute;
+ right: 0;
+ top: 14px;
+}
+
+#search a {
+  color: #66757F;
+}
+
+#search li {
+  padding: 11px 17px;
+}
+
+#search li:hover a {
+  color: #55ACEE;
+}
+
+
+
+#wrapper {
+  margin: 10px auto;
+  width: 890px;
 }
 
 #sidebar {
   float: left;
   width: 290px;
-  margin: 0px;
-  padding: 0px;
 }
 
-#tweetfeed {
-  background: white;
-  float: right;
-  width: 590px;
+#sidebar ul {
+  list-style: none;
   margin: 0px;
   padding: 0px;
-  border-radius: 5px;
-}
-
-#profile, #who-to-follow, #trends, #copyrights {
-  width: 260px;
-  margin: 0px 0px 10px 0px;
-  padding: 15px;
-  background: #ffffff;
-  border-radius: 5px;
-  font-size: 13px;
-  font-weight: 400;
 }
 
 .sidebar-title {
   color: #66757F;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
-.changes {
-  font-size: 12px;
+.sidebar-title a {
+  color: #55ACEE;
+  text-decoration: none;
 }
 
-#sidebar a {
-  color: #FF645F;
-}
-
-#sidebar a:hover {
+.sidebar-title a:hover {
+  color: #55ACEE;
   text-decoration: underline;
 }
 
-#trends {
-  line-height: 22px;
-}
-
-#copyrights {
+.sidebar-change {
   font-size: 12px;
-  font-weight: 400;
-  color: #8899A6;
-  line-height: 18px;
 }
 
-#copyrights a {
-  color: #8899A6;
+#profile, #who-to-follow, #trending-topics, #copyrights {
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin: 0px 0px 10px 0px;
 }
 
-#copyrights:hover a {
-  color: #66757F;
-}
-
-#copyrights ul {
-  margin: 0px;
+#profile {
   padding: 0px;
 }
 
-#copyrights li {
-  margin: 0px;
-  padding: 0px 3px;
-  display: inline;
-  list-style: none;
+#profile-info {
+  height: 145px;
+  border-radius: 6px 6px 0px 0px;
+  background: url(../images/profile_bg.png);
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #1e1e1d;
 }
 
-.suggestion {
-  display: flex;
-  margin-bottom: 10px;
+#profile-pic {
+  padding-top: 17px;
 }
 
-.suggestion-pic {
-  float: left;
-  height: 100%;
-  margin-right: 10px;
+#profile-name {
+  margin: 4px 0px 3px 0px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.suggestion-pic img {
+#profile-username {
+  font-size: 14px;
+}
+
+#profile-pic img {
+  border: 3px solid #FFFFFF;
   border-radius: 5px;
 }
 
-.suggestion-info {
-  float: right;
-  width: 195px;
+#profile-stats {
+  height: 45px;
+  text-align: left;
+  border-bottom: 1px solid #E1E8ED;
+}
+
+table {
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+th {
   color: #8899A6;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0px 35px 0px 0px;
 }
 
-.suggestion-info b {
-  color: #292F33;
+td {
+  color: #55ACEE;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0px 35px 0px 0px;
 }
 
-.suggestion-close {
+#profile-input {
+  background: #DDEEFC;
+  border-radius: 0px 0px 6px 6px;
+  padding: 12px;
+}
+
+#profile-input input {
+  height: 20px;
+  width: 250px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #8899A6;
+  border-radius: 3px;
+  border: 1px solid #55ACEE;
+}
+
+#who-to-follow, #trending-topics, #copyrights {
+ padding: 15px;
+}
+
+.user-suggestion {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+.user-suggestion-pic {
+  float: left;
+  margin-right: 10px; 
+}
+
+.user-suggestion-pic img {
+  border-radius: 5px;
+}
+
+.user-suggestion-info {
+  float: right;
+  width: 196px;
+  font-size: 13px;
+}
+
+.user-suggestion-info a {
   color: #E1E8ED;
-  font-size: 15px;
+  text-decoration: none;
 }
 
+.user-suggestion-info a:hover {
+  text-decoration: none;
+}
 
+.suggestion-name a {
+  color: #292F33;
+  font-weight: 600;
+}
+
+.suggestion-name a:hover {
+  color: #55ACEE;
+  text-decoration: underline;
+}
 
 .follow-button {
   width: 80px;
@@ -146,4 +275,115 @@ header {
   background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
   background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F2F5F7 100%);
   background-image: linear-gradient(to bottom, #FFFFFF 0%, #F2F5F7 100%);
+  font-weight: 700;
+  color: #292F33;
+}
+
+.follow-button i {
+  color: #55ACEE;
+  padding-right: 1px;
+}
+
+.follow-button a {
+  color: #292F33;
+  text-decoration: none;
+}
+
+.follow-button:hover {
+  background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #CCD6DD 100%);
+  background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #CCD6DD 100%);
+  background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #CCD6DD 100%);
+  background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #CCD6DD 100%);
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #CCD6DD 100%);
+}
+
+.user-suggestion-close {
+  float: right;
+  color: #CCD6DD;
+}
+
+#connect {
+  font-size: 13px;
+}
+
+#connect a {
+  text-decoration: none;
+  color: #55ACEE;
+}
+
+#connect a:hover {
+  text-decoration: underline;
+}
+
+#trending-topics {
+  font-size: 13px;
+}
+
+#trending-topics a {
+  color: #55ACEE;
+  text-decoration: none;
+}
+
+#trending-topics a:hover {
+  text-decoration: underline;
+}
+
+#trending-topics li {
+  padding: 2px 0px;
+}
+
+#copyrights {
+  font-size: 12px;
+  color: #8899A6;
+  line-height: 18px;
+}
+
+#copyrights a {
+  color: #8899A6;
+  text-decoration: none;
+}
+
+#copyrights a:hover {
+  text-decoration: underline;
+}
+
+#copyrights:hover a {
+  color: #292F33;
+}
+
+#copyrights li {
+  display: inline;
+  padding: 0px 3px;
+}
+
+#tweetfeed {
+  float: right;
+  width: 590px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+#tweetfeed-title {
+  color: #66757F;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 12px;
+}
+
+#tweetfeed-new {
+  background: #EEEEEE;
+  text-align: center;
+  padding: 14px 0px;
+  font-size: 13px;
+  border-top: 1px solid #E1E8ED;
+}
+
+#tweetfeed-new:hover {
+  background: #CECECE;
+  cursor: pointer;
+}
+
+#tweetfeed-new a {
+  color: #55ACEE;
+  text-decoration: none;
 }
